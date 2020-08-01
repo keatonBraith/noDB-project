@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Recording from "./Recording";
 
 class Post extends Component {
   constructor(props) {
@@ -9,6 +10,7 @@ class Post extends Component {
       url: url,
       description: description,
       date: date,
+      dropdownVisible: false,
     };
   }
 
@@ -27,6 +29,12 @@ class Post extends Component {
     this.toggleEdit();
   };
 
+  toggleDropDown = () => {
+    this.setState({
+      dropdownVisible: !this.state.dropdownVisible,
+    });
+  };
+
   render() {
     return (
       <div className="post">
@@ -40,6 +48,16 @@ class Post extends Component {
           >
             Delete
           </button>
+          <div>
+            <div className="dropdown" onClick={this.toggleDropDown}>
+              REC &#9776;
+            </div>
+            {this.state.dropdownVisible ? (
+              <button className="recorder-menu recorder-collapse">
+                <Recording className="recorder" />
+              </button>
+            ) : null}
+          </div>
         </div>
         <main className="post-main">
           <div className="image-containers">

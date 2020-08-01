@@ -52,6 +52,15 @@ class Main extends Component {
       .catch((err) => console.log(err));
   };
 
+  addRecording = (id, recording) => {
+    axios
+      .put(`/api/memories/recording/${id}`, recording)
+      .then((response) => {
+        this.setState({ memories: response.data });
+      })
+      .catch((err) => console.log(err));
+  };
+
   render() {
     return (
       <div>
@@ -64,6 +73,7 @@ class Main extends Component {
               key={elem.id}
               editMemory={this.editMemory}
               deleteMemory={this.deleteMemory}
+              addRecording={this.addRecording}
             />
           );
         })}

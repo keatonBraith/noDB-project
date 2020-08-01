@@ -1,5 +1,4 @@
 const memories = require("./memories.json");
-const { memo } = require("react");
 let nextId = 3;
 
 module.exports = {
@@ -38,5 +37,15 @@ module.exports = {
       memories.splice(index, 1);
       res.status(200).send(memories);
     }
+  },
+  addRecording: (req, res) => {
+    let { id } = req.params;
+    const recording = "";
+    const index = memories.findIndex((elem) => {
+      return elem.id === +id;
+    });
+    memories[index].recording = recording;
+    console.log(memories);
+    res.status(200).send(memories);
   },
 };

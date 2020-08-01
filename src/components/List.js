@@ -29,11 +29,11 @@ class List extends Component {
           }}
         >
           <input
-            className="inputs"
+            className="inputs url-input"
             name="url"
             value={this.state.url}
             placeholder="Add A URL"
-            type="text"
+            type="url"
             onChange={(e) => this.universalHandler(e)}
           />
           <input
