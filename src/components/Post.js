@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import Recording from "./Recording";
+import Delete from "./Delete";
+import Edit from "./Edit";
+import Record from "./Record";
 
 class Post extends Component {
   constructor(props) {
@@ -39,18 +42,14 @@ class Post extends Component {
     return (
       <div className="post">
         <div className="post-btns">
-          <button className="edit-button" onClick={this.toggleEdit}>
-            Edit
-          </button>
-          <button
+          <Edit className="edit-button" onClick={this.toggleEdit} />
+          <Delete
             className="delete-button"
             onClick={() => this.props.deleteMemory(this.props.info.id)}
-          >
-            Delete
-          </button>
+          />
           <div>
-            <div className="dropdown" onClick={this.toggleDropDown}>
-              REC &#9776;
+            <div>
+              <Record className="dropdown" onClick={this.toggleDropDown} />
             </div>
             {this.state.dropdownVisible ? (
               <button className="recorder-menu recorder-collapse">

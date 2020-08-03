@@ -32,7 +32,7 @@ body {
 
 .main-header {
   position: absolute;
-  margin: 0 38%;
+  margin: 0 37%;
   margin-top: 15px;
   font-family: "Quicksand", sans-serif;
   color: black;
@@ -52,6 +52,33 @@ body {
   border-radius: 6px;
   border: 1px solid #dcdcdc;
   font-family: "Quicksand", sans-serif;
+}
+
+.add-memory {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.input-cancel {
+  right: 0;
+  margin-right: 14%;
+  height: 40px;
+  position: absolute;
+  margin-top: 45px;
+  cursor: pointer;
+}
+
+.input-add {
+  right: 0;
+  margin-right: 19%;
+  height: 40px;
+  position: absolute;
+  margin-top: 45px;
+  cursor: pointer;
 }
 
 button {
@@ -79,7 +106,7 @@ button {
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  margin: 20px 100px;
+  margin: 0px 100px 20px 100px;
   height: 75vh;
   border: 1px solid #dcdcdc;
   border-radius: 6px;
@@ -92,11 +119,15 @@ button {
 }
 
 .edit-button {
-  margin: 10px 0 0 50px;
+  right: 0;
+  margin-right: 32%;
+  margin-top: 10px;
   position: absolute;
   border-style: none;
   background-color: none;
   background: none;
+  height: 40px;
+  cursor: pointer;
 }
 
 .delete-button {
@@ -107,6 +138,8 @@ button {
   border-style: none;
   background-color: none;
   background: none;
+  height: 40px;
+  cursor: pointer;
 }
 
 .post-main {
@@ -119,20 +152,20 @@ button {
 }
 
 .image-containers {
-  height: 80%;
+  height: 90%;
   width: 60%;
   background-color: rgb(36, 36, 36);
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 4%;
   border-radius: 6px;
 }
 
 .post-image {
   height: 90%;
-  width: 70%;
+  width: 75%;
 }
 
 .post-side {
@@ -176,19 +209,16 @@ button {
 }
 
 .dropdown {
-  font-family: "Quicksand", sans-serif;
   cursor: pointer;
-  color: #666666;
-  text-shadow: 0px 1px 0px #ffffff;
-  font-size: 15px;
-  font-weight: bold;
   position: absolute;
-  margin-top: 18px;
-  margin-left: 70%;
+  margin-top: 10px;
+  right: 0;
+  margin-right: 21%;
+  height: 40px;
 }
 
 .recorder-menu {
   position: absolute;
-  margin-top: 38px;
+  margin-top: 50px;
   margin-left: 65%;
 }
