@@ -33,7 +33,7 @@ class List extends Component {
                 className="inputs"
                 name="url"
                 value={this.state.url}
-                placeholder="Add A URL"
+                placeholder="Add URL"
                 type="url"
                 onChange={(e) => this.universalHandler(e)}
               />
@@ -41,7 +41,7 @@ class List extends Component {
                 className="inputs"
                 name="description"
                 value={this.state.description}
-                placeholder="Add A Description"
+                placeholder="Add Description"
                 type="text"
                 onChange={(e) => this.universalHandler(e)}
               />
@@ -49,7 +49,7 @@ class List extends Component {
                 className="inputs"
                 name="date"
                 value={this.state.date}
-                placeholder="Add A date"
+                placeholder="Add Date"
                 type="text"
                 onChange={(e) => this.universalHandler(e)}
               />
@@ -70,7 +70,7 @@ class List extends Component {
           </div>
         ) : (
           <div className="add-memory">
-            <button onClick={this.toggleInput}>ADD A MEMORY</button>
+            <button className="add-mem" onClick={this.toggleInput}>ADD A MEMORY</button>
           </div>
         )}
       </div>

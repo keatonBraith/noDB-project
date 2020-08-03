@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <Header />
       <Main />
+      <footer>&copy;Copyright 2020 Keaton Braithwaite, LLC</footer>
     </div>
   );
 }

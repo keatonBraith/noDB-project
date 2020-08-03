@@ -52,7 +52,7 @@ class Post extends Component {
               <Record className="dropdown" onClick={this.toggleDropDown} />
             </div>
             {this.state.dropdownVisible ? (
-              <button className="recorder-menu recorder-collapse">
+              <button className="recorder-menu recorder-button">
                 <Recording className="recorder" />
               </button>
             ) : null}
